@@ -125,10 +125,10 @@ def boost_deps():
         http_archive(
             name = "boost",
             urls = [
-                "https://%s.dl.sourceforge.net/project/boost/boost/1.67.0/boost_1_67_0.tar.gz" % m
+                "https://%s.dl.sourceforge.net/project/boost/boost/1.62.0/boost_1_62_0.tar.gz" % m
                 for m in SOURCEFORGE_MIRRORS
             ],
             build_file = "@com_github_nelhage_rules_boost//:BUILD.boost",
-            strip_prefix = "boost_1_67_0",
-            sha256 = "8aa4e330c870ef50a896634c931adf468b21f8a69b77007e45c444151229f665",
+            strip_prefix = "boost_1_62_0",
+            sha256 = "440a59f8bc4023dbe6285c9998b0f7fa288468b889746b1ef00e8b36c559dce1",
         )
